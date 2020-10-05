@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_margin="10dp"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+
+    <ImageView
+        android:id="@+id/mijuan_icon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/xiaorentou" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/mijuan_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="name" />
+
+        <com.example.naruto.MyProgressBar
+            android:id="@+id/mijuan_fragment_progressBar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

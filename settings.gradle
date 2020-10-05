@@ -1,0 +1,1 @@
+include ':app', ':testbroadcast', ':services', ':testsqlife', ':test2', ':mediastore', ':testthread', ':Test4', ':Recipes', ':naruto', ':testjni', ':mmm', ':video'

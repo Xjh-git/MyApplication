@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.naruto">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".User.UserMainActivity" />
+        <activity android:name=".sponsor.SponsorMainActivity" />
+        <activity android:name=".User.UserNinjiaActivity" />
+        <activity android:name=".User.UserMijuanActivity" />
+        <activity android:name=".sponsor.NinjiaActivity" />
+        <activity android:name=".sponsor.MijuanActivity" />
+        <activity android:name=".sponsor.QueryNinjiaActivity" />
+        <activity android:name=".sponsor.AddNinjiaActivity" />
+        <activity android:name=".sponsor.QueryMijuanActivity" />
+        <activity android:name=".sponsor.AddMijuanActivity" />
+        <activity android:name=".sponsor.UpdateNinjiaActivity" />
+        <activity android:name=".sponsor.UpdateMijuanActivity" />
+        <activity android:name=".User.NinjiaDetailsActivity" />
+        <activity android:name=".User.MijuanDetailsActivity" />
+        <activity android:name=".sponsor.SpNinjiaDetailsActivity" />
+        <activity android:name=".sponsor.SpMijuanDetailsActivity"></activity>
+    </application>
+
+</manifest>

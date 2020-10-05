@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        android:padding="10dp">
+        <com.example.recipes.share.RectangleCircleImageView
+            android:id="@+id/RecentProductionImage"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@mipmap/ic_launcher"/>
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RecentProductionImage"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/RecentProductionName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="50dp"
+                android:text="@string/test" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RecentProductionImage"
+            android:layout_alignParentRight="true">
+
+            <com.example.recipes.CircleImageView
+                android:id="@+id/RecentWorkerPhoto"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="50dp"
+                android:src="@drawable/pizza"/>
+            <TextView
+                android:id="@+id/RecentWorkerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/test"
+                android:layout_marginTop="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="50dp"
+                />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

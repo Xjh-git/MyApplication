@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Naruto</string>
+
+    <string name="ninjia_level">忍者等级</string>
+
+    <string-array name="ninjia_levels">
+        <item>S</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@drawable/tt">
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_setting"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/iconfont_setting" />
+
+    <TextView
+        android:id="@+id/PC_name"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/textView7"
+        android:layout_alignStart="@+id/img_touxiang"
+        android:gravity="center"
+        android:text="用户名"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_alignEnd="@+id/PC_name"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="关注" />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_alignStart="@+id/PC_name"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="粉丝"
+        android:id="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/Pc_toedit"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_above="@+id/img_touxiang"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-69dp"
+        android:gravity="center"
+        android:text="编辑个人资料" />
+
+    <com.example.recipes.CircleImageView
+        android:id="@+id/img_touxiang"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/textView7"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="33dp"
+        android:src="@drawable/xiaorentu" />
+
+    <ImageView
+        android:id="@+id/iv_tomywork"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="33dp"
+        android:layout_toStartOf="@+id/textView3"
+        android:src="@drawable/iconfont_share" />
+
+    <TextView
+        android:id="@+id/tv_tomywork"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_tomywork"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/iv_tomywork"
+        android:text="我的作品"
+        android:textSize="25dp" />
+
+    <ImageView
+        android:id="@+id/iv_tomycollect"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignStart="@+id/iv_tomywork"
+        android:layout_below="@+id/iv_tomywork"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/iconfont_collect" />
+
+    <TextView
+        android:id="@+id/tv_tomycollect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_tomycollect"
+        android:layout_alignStart="@+id/tv_tomywork"
+        android:text="我的收藏"
+        android:textSize="25dp" />
+
+    <ImageView
+        android:id="@+id/iv_tomyrecipes"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignStart="@+id/iv_tomycollect"
+        android:layout_below="@+id/tv_tomycollect"
+        android:layout_marginTop="17dp"
+        android:src="@drawable/knife" />
+
+    <TextView
+        android:id="@+id/tv_tomyrecipes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_tomyrecipes"
+        android:layout_alignStart="@+id/tv_tomycollect"
+        android:text="我的菜谱"
+        android:textSize="25dp" />
+</RelativeLayout>

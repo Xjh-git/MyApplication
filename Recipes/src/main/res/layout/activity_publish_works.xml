@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.recipes.share.PublishWorkActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back_iv"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:contentDescription="TODO"
+            android:scaleType="fitStart"
+            android:src="@drawable/iconfont_back" />
+
+        <TextView
+            android:id="@+id/page_title"
+            android:layout_width="252dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="上传作品"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/publish_works_tv"
+            android:layout_width="33dp"
+            android:layout_height="30dp"
+
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="发布"
+            android:textColor="#fb5b1b"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp"
+        android:orientation="vertical">
+
+        <com.example.recipes.share.RectangleCircleImageView
+            android:id="@+id/works_pic"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/zuoping" />
+
+        <TextView
+            android:id="@+id/tips_title"
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:layout_gravity="center|start"
+            android:layout_marginTop="70dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:text="添加更多元素"
+            android:textColor="#707070"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="10dp"
+            android:background="#e9e9f4"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+        <LinearLayout
+            android:id="@+id/link_recipes"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/label_iv"
+                android:layout_width="22dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:contentDescription="TODO"
+                android:scaleType="fitStart"
+                android:src="@drawable/label" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_weight="3"
+                android:gravity="center|start"
+                android:text="关联菜谱"
+                android:textColor="@android:color/black"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/linkrecipes_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_weight="5"
+                android:gravity="center|end"
+                android:text="参考菜谱?"
+                android:textColor="#707070"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="8dp"
+            android:background="#e9e9f4"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+        <LinearLayout
+            android:id="@+id/add_label"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="#"
+                android:textColor="#707070"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_weight="3"
+                android:gravity="center|start"
+                android:text="添加标签"
+                android:textColor="@android:color/black"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/addlabel_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_weight="5"
+                android:gravity="center|end"
+                android:text="添加作品标签"
+                android:textColor="#707070"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="#e9e9f4"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+    </LinearLayout>
+</LinearLayout>

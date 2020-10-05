@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".classify.ClassifyActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="122dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/classify_back"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/iconfont_back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/classify_title"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/classify1"
+                android:textSize="18dp"
+                android:layout_marginTop="15dp"
+                android:textColor="#000000"/>
+            <GridView
+                android:id="@+id/classifyGV"
+                android:layout_width="wrap_content"
+                android:layout_height="170dp"
+                android:gravity="center"
+                android:numColumns="4"
+                android:columnWidth="80dp"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dp"
+                android:horizontalSpacing="10dp"
+                android:layout_marginTop="5dp">
+            </GridView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/classify2"
+                android:textSize="18dp"
+                android:layout_marginTop="5dp"
+                android:textColor="#000000"/>
+
+            <GridView
+                android:id="@+id/classifyGV2"
+                android:layout_width="wrap_content"
+                android:layout_height="170dp"
+                android:gravity="center"
+                android:numColumns="4"
+                android:columnWidth="80dp"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dp"
+                android:horizontalSpacing="10dp"
+                android:layout_marginTop="5dp">
+            </GridView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/classify3"
+                android:textSize="18dp"
+                android:layout_marginTop="5dp"
+                android:textColor="#000000"/>
+
+            <GridView
+                android:id="@+id/classifyGV3"
+                android:layout_width="wrap_content"
+                android:layout_height="170dp"
+                android:gravity="center"
+                android:numColumns="4"
+                android:columnWidth="80dp"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dp"
+                android:horizontalSpacing="10dp"
+                android:layout_marginTop="5dp">
+
+            </GridView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="181dp" />
+
+    <android.support.constraint.Barrier
+        android:id="@+id/barrier2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left" />
+
+
+</android.support.constraint.ConstraintLayout>

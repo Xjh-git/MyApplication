@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <com.example.recipes.share.RectangleCircleImageView
+            android:id="@+id/works_pic_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/userportrait" />
+
+        <TextView
+            android:id="@+id/tagname_tv"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical|end"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="标签"
+            android:textColor="@color/bg"
+            android:textSize="16sp" />
+    </FrameLayout>
+
+</LinearLayout>

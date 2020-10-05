@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_weight="1"
+    android:background="@null"
+    android:orientation="horizontal"
+    tools:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <com.example.recipes.share.RectangleCircleImageView
+            android:id="@+id/rectangleCircleImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/xiaorentu" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+
+        android:layout_weight="1.8"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/recipe_name"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:gravity="center|start"
+            android:text="菜谱名"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/recipe_writer"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:gravity="center|start"
+            android:text="作者名"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/recipe_score"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:text="评分"
+            android:textSize="15sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">吃了么</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="rank_title">评分最高</string>
+    <string name="production_name">作品名:</string>
+    <string name="grade">分数:</string>
+    <string name="worker">作者:</string>
+    <string name="worker_image">头像</string>
+    <string name="test">xxx</string>
+    <string name="recent_title">最近发布</string>
+    <string name="classify_title">菜谱分类</string>
+    <string name="classify1">热门分类</string>
+    <string name="classify2">菜式</string>
+    <string name="classify3">场景</string>
+    <string name="classify4">用途</string>
+</resources>

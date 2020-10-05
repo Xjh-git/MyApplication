@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.recipes.share.SearchActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:fadeScrollbars="false"
+        android:orientation="horizontal">
+
+        <!--<ImageView-->
+            <!--android:id="@+id/back_iv"-->
+            <!--android:layout_width="36dp"-->
+            <!--android:layout_height="36dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:src="@drawable/iconfont_back" android:contentDescription="TODO"/>-->
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="6"
+            android:layout_marginRight="3dp"
+            android:layout_marginLeft="3dp">
+
+            <EditText
+                android:id="@+id/search_et"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_marginTop="4dp"
+                android:paddingStart="30dp"
+                android:layout_weight="20"
+                android:background="#ececf4"
+                android:ems="10"
+                android:hint="搜索菜谱"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="#8a8a8a"
+                android:textCursorDrawable="@layout/edit_cursor_color2"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/search_iv"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:contentDescription="TODO"
+                android:scaleType="fitCenter"
+                android:src="@drawable/iconfont_search"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/clear1_iv"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical|end"
+                android:scaleType="fitCenter"
+                android:src="@drawable/clear"
+                android:visibility="invisible" />
+
+
+        </FrameLayout>
+
+
+        <Button
+            android:id="@+id/cancel_bt"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#8a8a8a" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/recipes_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"/>
+
+</LinearLayout>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="7dp"
+    android:orientation="vertical"
+    tools:context="com.example.recipes.Recipes.RecipesContentActivity">
+
+    <ImageView
+        android:id="@+id/back_iv"
+        android:layout_width="50dp"
+        android:layout_height="84dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:contentDescription="TODO"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/iconfont_close" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.example.recipes.share.RectangleCircleImageView
+                android:id="@+id/recipes_pic"
+                android:layout_width="346dp"
+                android:layout_height="220dp"
+                android:layout_gravity="center"
+                android:src="@drawable/zuoping" />
+
+            <TextView
+                android:id="@+id/recipes_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="菜谱名"
+                android:textColor="#141414"
+                android:textSize="19sp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="12dp"
+                android:background="#d4d1d1"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal" android:baselineAligned="false">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="32dp"
+                        android:gravity="start|center"
+                        android:text="作者"
+                        android:textColor="#fb5b1b"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/writer_name"
+                        android:layout_width="149dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="start|center"
+                        android:text="作者昵称"
+                        android:textColor="#141414"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:background="#d4d1d1"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginBottom="12dp"
+                android:gravity="start|center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="用料"
+                android:textColor="#fb5b1b"
+                android:textSize="19sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="12dp"
+                android:background="#d4d1d1"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <TextView
+                android:id="@+id/recipes_ingredient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:gravity="start|center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="材料"
+                android:textColor="#141414"
+                android:textSize="19sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="12dp"
+                android:background="#d4d1d1"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginBottom="12dp"
+                android:gravity="start|center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="步骤"
+                android:textColor="#fb5b1b"
+                android:textSize="19sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="12dp"
+                android:background="#d4d1d1"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <TextView
+                android:id="@+id/progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:gravity="start|center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="做法"
+                android:textColor="#141414"
+                android:textSize="19sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="30dp"
+                android:background="#d4d1d1"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginBottom="12dp"
+                android:gravity="start|center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="小贴士"
+                android:textColor="#fb5b1b"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/tips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="start|center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="提示"
+                android:textColor="#141414"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/recipes_release_info"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginBottom="35dp"
+                android:gravity="start|center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="浏览量,收藏量,创建时间 "
+                android:textColor="#707070"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        android:layout_weight="1"
+        android:baselineAligned="false"
+
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <LinearLayout
+            android:id="@+id/collect"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/like_iv"
+                android:layout_width="26dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#ffffff"
+                android:contentDescription="TODO"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_likeorange" />
+
+            <TextView
+                android:id="@+id/collect_tv"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="收藏"
+                android:textColor="#fb5b1b"
+                android:textSize="19sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/publish"
+            android:layout_width="0dp"
+
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:fadeScrollbars="false"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/camera_iv"
+                android:layout_width="26dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#ffffff"
+                android:contentDescription="TODO"
+                android:scaleType="fitCenter"
+                android:src="@drawable/camera" />
+
+            <TextView
+                android:id="@+id/publish1_tv"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="传作品"
+                android:textColor="#fb5b1b"
+                android:textSize="19sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
